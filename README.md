@@ -1,5 +1,6 @@
 # ListaDeVenda
-[Uma lista de venda de produtos. é imprimido separando os que foram pagos à vista, a prazo (em pagamento) e a prazo (concluído).]
+[Uma lista de venda de produtos. É imprimido separando os que foram pagos à vista, a prazo (em pagamento) e a prazo (concluído).]
+
 
 ->TAREFA:
 (1. Um programa que armazene uma lista de vendas.
