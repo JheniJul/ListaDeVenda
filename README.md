@@ -16,4 +16,3 @@ Imprima informações referentes:
 vendas a prazo
 vendas a vista
 vendas a prazo pagas
-Obs: não pode usar html/css.
