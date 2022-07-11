@@ -5,40 +5,41 @@ class Venda{
     private $numProd=0;
     public $pagamento;
 
-public function imprimir(){
-    echo "VENDA NO VALOR: " .$this->valor;
-    echo "</br> ----------------- </br>";
-    
+public function imprimirPrazoN(){
     echo "<font color='red'> A PRAZO - NÃO PAGO </br></font>";
     for($a=0; $a<$this->numProd; $a++){
         if($this->produtos[$a]->pagamento==1){
-                echo "Produto: " . $this->produtos[$a]->nome . "</br>";
-                echo " - Valor unidade: " . $this->produtos[$a]->valor . "</br>";
-                echo " - Quantidade: " . $this->produtos[$a]->quant . "</br>";
-                echo "Valor Total: " . $this->produtos[$a]->valorT ;
-                echo "</br> </br>";
+            echo "Produto: " . $this->produtos[$a]->nome . "</br>";
+            echo " - Valor unidade: " . $this->produtos[$a]->valor . "</br>";
+            echo " - Quantidade: " . $this->produtos[$a]->quant . "</br>";
+            echo "Valor Total: " . $this->produtos[$a]->valorT ;
+            echo "</br> </br>";
         }
     }
+}
 
+public function imprimirPrazoC(){
     echo "<font color='blue'> A PRAZO - PAGO </br></font>";
     for($a=0; $a<$this->numProd; $a++){
         if($this->produtos[$a]->pagamento==2){
-                echo "Produto: " . $this->produtos[$a]->nome . "</br>";
-                echo " - Valor unidade: " . $this->produtos[$a]->valor . "</br>";
-                echo " - Quantidade: " . $this->produtos[$a]->quant . "</br>";
-                echo "Valor Total: " . $this->produtos[$a]->valorT ;
-                echo "</br> </br>";
+            echo "Produto: " . $this->produtos[$a]->nome . "</br>";
+            echo " - Valor unidade: " . $this->produtos[$a]->valor . "</br>";
+            echo " - Quantidade: " . $this->produtos[$a]->quant . "</br>";
+            echo "Valor Total: " . $this->produtos[$a]->valorT ;
+            echo "</br> </br>";
         }
     }
+}   
     
+public function imprimirVista(){
     echo "<font color='green'> À VISTA </br></font>";
     for($a=0; $a<$this->numProd; $a++){
         if($this->produtos[$a]->pagamento==3){
-                echo "Produto: " . $this->produtos[$a]->nome . "</br>";
-                echo " - Valor unidade: " . $this->produtos[$a]->valor . "</br>";
-                echo " - Quantidade: " . $this->produtos[$a]->quant . "</br>";
-                echo "Valor Total: " . $this->produtos[$a]->valorT ;
-                echo "</br> </br>";
+            echo "Produto: " . $this->produtos[$a]->nome . "</br>";
+            echo " - Valor unidade: " . $this->produtos[$a]->valor . "</br>";
+            echo " - Quantidade: " . $this->produtos[$a]->quant . "</br>";
+            echo "Valor Total: " . $this->produtos[$a]->valorT ;
+            echo "</br> </br>";
         }
     }
 }
