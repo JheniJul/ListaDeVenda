@@ -7,5 +7,10 @@ $venda->gerarProduto();
 $venda->calcularVenda();
 
 echo"</br>";
-echo $venda->imprimir();
+echo "VENDA NO VALOR: " . $venda->valor;
+echo "</br> ----------------- </br>";
+
+echo $venda->imprimirVista();
+echo $venda->imprimirPrazoC();
+echo $venda->imprimirPrazoN();
 ?>
